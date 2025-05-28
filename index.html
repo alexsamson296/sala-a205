@@ -7,9 +7,28 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            color: #f0f0f0;
             margin: 0;
             padding: 0;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #90caf9;
         }
 
         .header-logos {
@@ -17,7 +36,7 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            background-color: white;
+            background-color: #1f1f1f;
         }
 
         .header-logos img {
@@ -30,14 +49,14 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: white;
+            background: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
             text-align: center;
         }
 
         h1, h2, p {
-            color: #000;
+            color: #f0f0f0;
         }
 
         img.lab-img {
@@ -46,23 +65,21 @@
             border-radius: 8px;
         }
 
-        .sdr-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 24px;
-            background-color: #003366;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        .sdr-button:hover {
-            background-color: #005599;
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-top: 20px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="#">HackRF Nokia</a>
+        <a href="#">Alt Proiect</a>
+    </nav>
 
     <div class="header-logos">
         <img src="logo_upt1.JPG" alt="Logo UPT">
@@ -74,9 +91,7 @@
         <p>Sala laboratorului A205</p>
         <img src="IMG_0659.JPG" alt="Sala A205 - UPT ETcTI" class="lab-img">
 
-        <a class="sdr-button" href="https://etcsdr.duckdns.org/#freq=106499464,mod=wfm,sql=-150" target="_blank">
-            Accesează platforma SDR
-        </a>
+        <iframe src="https://etcsdr.duckdns.org/#freq=106499464,mod=wfm,sql=-150"></iframe>
     </div>
 
 </body>
