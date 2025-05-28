@@ -45,21 +45,27 @@
             border-radius: 8px;
         }
 
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-            margin-top: 20px;
-            border-radius: 8px;
+        .sdr-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background-color: #003366;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .sdr-button:hover {
+            background-color: #005599;
         }
     </style>
 </head>
 <body>
 
     <div class="header-logos">
-       <img src="logo_upt.png" alt="Logo UPT">
-       <img src="logo_etcti.png" alt="Logo ETcTI">
-
+        <img src="logo_upt.png" alt="Logo UPT">
+        <img src="logo_etcti.png" alt="Logo ETcTI">
     </div>
 
     <div class="container">
@@ -67,7 +73,10 @@
         <h2>Facultatea de Electronică, Telecomunicații și Tehnologii Informaționale</h2>
         <p>Sala laboratorului A205</p>
         <img src="IMG_0659.JPG" alt="Sala A205 - UPT ETcTI" class="lab-img">
-        <iframe src="https://etcsdr.duckdns.org/#freq=106499464,mod=wfm,sql=-150"></iframe>
+
+        <a class="sdr-button" href="https://etcsdr.duckdns.org/#freq=106499464,mod=wfm,sql=-150" target="_blank">
+            Accesează platforma SDR
+        </a>
     </div>
 
 </body>
