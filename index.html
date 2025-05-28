@@ -6,26 +6,40 @@
     <title>Sala A205 - UPT ETcTI</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
-        h1, h2 {
-            text-align: center;
-            color: #333;
+        .header-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .header-logos img {
+            height: 100px;
+            object-fit: contain;
         }
 
         .container {
             max-width: 1000px;
-            margin: auto;
+            margin: 0 auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
+            text-align: center;
         }
 
-        img {
+        h1, h2, p {
+            color: #000;
+        }
+
+        img.lab-img {
             width: 100%;
             height: auto;
             border-radius: 8px;
@@ -41,12 +55,19 @@
     </style>
 </head>
 <body>
+
+    <div class="header-logos">
+        <img src="logo_upt.png" alt="Logo UPT">
+        <img src="logo_etcti.png" alt="Logo ETcTI">
+    </div>
+
     <div class="container">
         <h1>Universitatea Politehnica Timișoara</h1>
         <h2>Facultatea de Electronică, Telecomunicații și Tehnologii Informaționale</h2>
-        <p style="text-align: center;">Sala laboratorului A205</p>
-        <img src="IMG_0659.JPG" alt="Sala A205 - UPT ETcTI">
+        <p>Sala laboratorului A205</p>
+        <img src="IMG_0659.JPG" alt="Sala A205 - UPT ETcTI" class="lab-img">
         <iframe src="https://etcsdr.duckdns.org/#freq=106499464,mod=wfm,sql=-150"></iframe>
     </div>
+
 </body>
 </html>
